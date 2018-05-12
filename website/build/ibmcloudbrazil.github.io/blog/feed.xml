@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Open Cloud Community Blog</title>
+        <link>https://ibmcloudbrazil.github.io//blog</link>
+        <description>The best place to stay up-to-date with the latest Open Cloud Community news and events.</description>
+        <lastBuildDate>Mon, 19 Mar 2018 06:00:00 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>Open Cloud Community Blog</title>
+            <url>https://ibmcloudbrazil.github.io//img/ibm-logo-white.png</url>
+            <link>https://ibmcloudbrazil.github.io//blog</link>
+        </image>
+        <copyright>Copyright © 2018Open Cloud Community</copyright>
+        <item>
+            <title><![CDATA[IBM Cloud Private - Versão nova !!]]></title>
+            <link>https://ibmcloudbrazil.github.io//blog/2018/03/19/new-version-icp.html</link>
+            <guid>https://ibmcloudbrazil.github.io//blog/2018/03/19/new-version-icp.html</guid>
+            <pubDate>Mon, 19 Mar 2018 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Foi lançada hoje a nova versão do IBM Cloud Private, versão 2.1.0.2.
+Saiba mais no [link](<a href="https://www.ibm.com/developerworks/community/blogs/fe25b4ef-ea6a-4d86-a629-6f87ccf4649e/entry/IBM_Cloud_Private_version_2_1_0_2_is_now_available_for_download?la">https://www.ibm.com/developerworks/community/blogs/fe25b4ef-ea6a-4d86-a629-6f87ccf4649e/entry/IBM_Cloud_Private_version_2_1_0_2_is_now_available_for_download?la</a></p>
+]]></description>
+        </item>
+    </channel>
+</rss>

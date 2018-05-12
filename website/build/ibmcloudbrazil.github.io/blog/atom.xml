@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ibmcloudbrazil.github.io//blog</id>
+    <title>Open Cloud Community Blog</title>
+    <updated>2018-03-19T06:00:00Z</updated>
+    <generator>Feed for Node.js</generator>
+    <link rel="alternate" href="https://ibmcloudbrazil.github.io//blog"/>
+    <subtitle>The best place to stay up-to-date with the latest Open Cloud Community news and events.</subtitle>
+    <logo>https://ibmcloudbrazil.github.io//img/ibm-logo-white.png</logo>
+    <rights>Copyright © 2018Open Cloud Community</rights>
+    <entry>
+        <title type="html"><![CDATA[IBM Cloud Private - Versão nova !!]]></title>
+        <id>https://ibmcloudbrazil.github.io//blog/2018/03/19/new-version-icp.html</id>
+        <link href="https://ibmcloudbrazil.github.io//blog/2018/03/19/new-version-icp.html">
+        </link>
+        <updated>2018-03-19T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>Foi lançada hoje a nova versão do IBM Cloud Private, versão 2.1.0.2.
+Saiba mais no [link](<a href="https://www.ibm.com/developerworks/community/blogs/fe25b4ef-ea6a-4d86-a629-6f87ccf4649e/entry/IBM_Cloud_Private_version_2_1_0_2_is_now_available_for_download?la">https://www.ibm.com/developerworks/community/blogs/fe25b4ef-ea6a-4d86-a629-6f87ccf4649e/entry/IBM_Cloud_Private_version_2_1_0_2_is_now_available_for_download?la</a></p>
+]]></summary>
+        <author>
+            <name>João Marcelo Barros</name>
+            <uri>http://twitter.com/jbarros</uri>
+        </author>
+    </entry>
+</feed>

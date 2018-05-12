@@ -1,0 +1,21 @@
+{
+  "docs-prod": {
+    "Open Community": [
+      "sobre-01"
+    ],
+    "IBM Cloud Private": [
+      "icp-prod-01"
+    ],
+    "HandsOn": [
+        "icp-lab-01",
+        "icp-lab-02",
+        "icp-intern-01"
+    ],
+    "Internals": [
+      "icp-intern-01"
+    ],
+    "Treinamentos": [
+      "icp-treina-01"
+  ]
+  }
+}
