@@ -4,7 +4,7 @@ pipeline {
     stage('run first') {
       steps {
         sh '''pwd
-curl -sL https://deb.nodesource.com/setup | sudo bash -
+curl -sL https://deb.nodesource.com/setup | bash -
 apt-get install -y nodejs
 npm install
 node --version
