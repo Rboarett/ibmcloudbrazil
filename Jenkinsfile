@@ -10,10 +10,9 @@ apt-get install -y nodejs
 npm install
 node --version
 npm install -g yarn
-yarn global add docusaurus-init
-ls
+npm install --global docusaurus-init
+yarn upgrade docusaurus --latest
 cd website
-ls
 yarn run build
 
 '''
