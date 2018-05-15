@@ -1,10 +1,25 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('prepare') {
       steps {
-        sh '''npm install -g yarn
-yarn install
+        sh '''pwd
+ls
+curl -sL https://deb.nodesource.com/setup_8.x | bash -
+apt-get install -y nodejs
+npm install
+node --version
+npm install -g yarn
+npm install --global docusaurus-init
+cd website
+yarn upgrade docusaurus --latest
+
+'''
+      }
+    }
+    stage('build') {
+      steps {
+        sh '''cd website 
 yarn run build'''
       }
     }
