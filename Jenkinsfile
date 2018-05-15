@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('run first') {
+    stage('prepare') {
       steps {
         sh '''pwd
 ls
@@ -13,9 +13,13 @@ npm install -g yarn
 npm install --global docusaurus-init
 cd website
 yarn upgrade docusaurus --latest
-yarn run build
 
 '''
+      }
+    }
+    stage('build') {
+      steps {
+        sh 'yarn run build'
       }
     }
   }
