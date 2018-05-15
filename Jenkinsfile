@@ -19,7 +19,8 @@ yarn upgrade docusaurus --latest
     }
     stage('build') {
       steps {
-        sh 'yarn run build'
+        sh '''cd website 
+yarn run build'''
       }
     }
   }
