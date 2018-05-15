@@ -23,6 +23,7 @@ const siteConfig = {
   projectName: '',
   headerLinks: [
     {doc: 'sobre-01', label: 'Comunidades'},
+    {doc: 'icp-treina-01', label: 'Treinamentos'},
     {page: 'help', label: 'Ajuda'},
     {blog: true, label: 'Blog'},
   ],
@@ -62,7 +63,7 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your template.
   repoUrl: 'https://github.com/facebook/test-site',
   /* On page navigation for the current documentation page */
-  // onPageNav: 'separate',
+  onPageNav: 'separate',
 };
 
 module.exports = siteConfig;

@@ -2,20 +2,33 @@
   "docs-prod": {
     "Open Community": [
       "sobre-01"
+
     ],
-    "IBM Cloud Private": [
-      "icp-prod-01"
+    "Comunidades": [
+      "icp-com-01"
     ],
-    "HandsOn": [
-        "icp-lab-01",
-        "icp-lab-02",
-        "icp-intern-01"
-    ],
-    "Internals": [
-      "icp-intern-01"
-    ],
+    
     "Treinamentos": [
       "icp-treina-01"
   ]
+
+  },
+  "icp":{
+    "IBM Private Cloud":[
+      "icp-prod-01"
+      ],
+    "Teste o ICP":[
+      "icp-test-01"
+      ],
+    "Hands On":[
+      "icp-handson-01",
+      "icp-lab-01",
+      "icp-lab-02"
+      ],
+   
+    "Automações e Scripts":[
+      "icp-intern-01"
+    ] 
+  
   }
 }

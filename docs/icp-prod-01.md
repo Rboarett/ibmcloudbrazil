@@ -1,7 +1,7 @@
 ---
 id: icp-prod-01
 title: IBM Private Cloud 
-sidebar_label: IBM Private Cloud
+sidebar_label: Overview
 ---
 
 ### ICP - Overview Video
@@ -10,19 +10,7 @@ sidebar_label: IBM Private Cloud
 
 [![IBM Cloud Overview](https://img.youtube.com/vi/yzXA3qhfaq0/0.jpg)](https://youtu.be/yzXA3qhfaq0 "ICP Overview")
 <br />
-
-### Documentos para parceiros ( Acesso restrito )
----------------------------------------------------
-- [ Pricing, Packaging and Sizing for ICP ](https://ibm.ent.box.com/file/282637509721)
-- [ IBM Cloud Private Overview and Strategy](https://ibm.ent.box.com/file/286206973036)    
-<br />
      
-
-
-
-
-
-
 
 ### Links Úteis ( Acesso Público )
 ---------------------------------

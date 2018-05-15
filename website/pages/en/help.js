@@ -17,13 +17,12 @@ class Help extends React.Component {
   render() {
     const supportLinks = [
       {
-        content:
-          'Se você não tem acessos as pastas restritas,[ click nesse link. ](https://docs.google.com/forms/d/e/1FAIpQLScAZjq4gASov9zRgmUMbY--gC2EryRnpboVS3o9HnZneAmBGA/viewform)',
+        content:'... em breve',
         title: 'Acesso as pastas',
       },
       {
-        content: 'Para solicitar acesso, click nesse link',
-        title: 'Acesso ao Prospecting',
+        content: '...em breve',
+        title: 'Acesso ao Docs',
       },
       {
         content: "...em breve",

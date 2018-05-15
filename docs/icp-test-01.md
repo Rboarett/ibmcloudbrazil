@@ -1,25 +1,37 @@
 ---
 id: icp-test-01
 title: Testing ICP  
-sidebar_label: Testing ICP 
+sidebar_label: Virtual Box
 ---
+<br />
 
-## Using VirtualBox ( Windows, Linux, MAC OSX )
+## Testando o ICP 2.1.0.2 com VirtualBox
 
-VirtualBox is the free option to run virtual servers in almost all OS's avaiable.
+Criamos uma versão OVA, com os prérquisitos já configurados para facilitar o teste.
 
-1. Download and install the VirtualBox
+Esse virtual appliance é baseado em VirtualBox, que é um opção gratuita para executar servidores virtuais, disponíveis para os principais SO's.
+
+Se você ainda não possue o VirtualBox instalado em seu computador, começe pelo download e instalação do virtual box, como abaixo:
+
+1. Faça o download e instalação do VirtualBox
     - Download VirtualBox [here](https://www.virtualbox.org/wiki/Downloads)
     - Install VirtualBox
 
+2. Faça o download Ubuntu + ICP 
+    - Download OVA [here](https://s3-api.us-geo.objectstorage.softlayer.net/jmbarros-icp-ce/icp-2-1-0-2/icp-ce-2-1-0-2.ova)
 
-2. Download ICP-LAB template
-    - Download ICP-LAB template [here](https://s3-api.wdc-us-geo.objectstorage.softlayer.net/jmbarros-minicloud/icp-lab-stark.ova)
-    - Please check MD5:
-```
-MD5 = 933c19541b4c41bea85cd3c9f582908a
-````
+3. Abra o arquivo com o virtual BOX 
+    - garanta que esse servidor terá um acesso a internet usando uma rede do tipo bridge 
+    - pelo menos 10 Gb de RAM ( 16 GB recomendado )
+    - pelo menos 2 vCPU's ( 4 vCPUs recomendado)
 
+4. Log no servidor virtual como:
+    - usuário: root
+    - senha: ibmcloud
+
+5. Instale o ICP Community Edition 
+    - execute no prompt:
+    ```bash install.sh```
 
 3. Open the ICP-LAB OVF file 
     - Click in the icp-lab.ofv to open using VIRTUAL BOX
@@ -33,32 +45,4 @@ MD5 = 933c19541b4c41bea85cd3c9f582908a
 python install_minicloud.py
 ````
     
-
-
-
 ------------------------
-
-## Using VMware Desktop ( Windows or Linux )
-
-1. Download and install the VMWARE DESKTOP
-Download VirtualBox [here](https://www.virtualbox.org/wiki/Downloads)
-Install VMWARE DESKTOP
-
-2. Download ICP-LAB template
-Download ICP-LAB template [AVAIABLE SOON!!!]()
-
-3. Open the ICP-LAB OVF file 
-Click in the icp-lab.ofv to open using VMware Desktop
-
-## Using VMware Fusion (MAC OSX)
-
-1. Download and install the VMWARE FUSION
-Download VMWARE FUSION [here](https://www.virtualbox.org/wiki/Downloads)
-Install VirtualBox
-
-2. Download ICP-LAB template
-Download ICP-LAB template [AVAIABLE SOON!!!]()
-
-3. Open the ICP-LAB OVF file 
-Click in the icp-lab.ofv to open using VMware Fusion
-
