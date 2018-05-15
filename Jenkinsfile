@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('run first') {
       steps {
-        sh '''node --version
+        sh '''echo $PATH
+node --version
 npm install -g yarn
 yarn install
 yarn global add docusaurus-init
