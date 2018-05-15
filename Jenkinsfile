@@ -13,6 +13,7 @@ npm install -g yarn
 yarn global add docusaurus-init
 ls
 cd website
+ls
 yarn run build
 
 '''
