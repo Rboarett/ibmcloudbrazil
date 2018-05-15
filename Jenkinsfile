@@ -4,6 +4,7 @@ pipeline {
     stage('run first') {
       steps {
         sh '''echo $PATH
+npm install
 node --version
 npm install -g yarn
 yarn install
