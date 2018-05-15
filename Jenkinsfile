@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('run first') {
       steps {
-        sh '''echo $PATH
+        sh '''pwd
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+apt-get install -y nodejs
 npm install
 node --version
 npm install -g yarn
