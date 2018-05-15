@@ -11,8 +11,8 @@ npm install
 node --version
 npm install -g yarn
 npm install --global docusaurus-init
-yarn upgrade docusaurus --latest
 cd website
+yarn upgrade docusaurus --latest
 yarn run build
 
 '''
