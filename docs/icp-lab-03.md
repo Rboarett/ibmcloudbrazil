@@ -100,7 +100,7 @@ docker push mycluster.icp:8500/default/nginx
 ![](https://c1.staticflickr.com/1/968/27300691097_cb8884c08d_o.png)
 
 
-### 5 - Creando um services 
+### 5 - Criando um services 
 
 - volte para o terminal e crie um arquivo service-nginx.yml
 ````
