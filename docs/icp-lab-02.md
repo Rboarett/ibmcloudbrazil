@@ -11,7 +11,7 @@ sidebar_label: Instalando e Configurando
 
 ### 1 - Download da chave
 
-[Click aqui para fazer o download da chave](https://ibmcloudbrazil.github.io/docs/icp-2-1-0-2-v1)
+[Click aqui](https://raw.githubusercontent.com/IBMCloudBrazil/ibmcloudbrazil/master/docs/icp-2-1-0-2-v1) para fazer o download da chave
 
 ### 2 - Faça login no servidor
 
