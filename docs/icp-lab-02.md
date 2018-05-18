@@ -11,7 +11,8 @@ sidebar_label: Instalando e Configurando
 
 ### 1 - Download da chave
 
-[Click aqui](https://raw.githubusercontent.com/IBMCloudBrazil/ibmcloudbrazil/master/docs/icp-2-1-0-2-v1) para fazer o download da chave
+Faça o download da chave do servidor, clicando [aqui](https://raw.githubusercontent.com/IBMCloudBrazil/ibmcloudbrazil/master/docs/icp-2-1-0-2-v1)
+
 
 ### 2 - Faça login no servidor
 
@@ -46,5 +47,5 @@ docker run -e LICENSE=accept --net=host \
 ibmcom/icp-inception:2.1.0.2 install
 ```
 
-Você deve ter receber uma tela como essa
+Você deve ver uma tela como essa
 ![](https://c1.staticflickr.com/1/970/28299699158_9d72e7f93d_b.jpg)
