@@ -24,8 +24,16 @@ yarn run build'''
       }
     }
     stage('build docker') {
+      agent {
+        docker {
+          image 'nginx'
+          args 'COPY ibmcloudbrazil.github.io /usr/share/nginx/html'
+        }
+
+      }
       steps {
-        sh 'docker build -t ibmcloudbrazil .'
+        sh '''cd website
+cd build'''
       }
     }
   }
