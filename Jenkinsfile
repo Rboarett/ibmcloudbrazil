@@ -25,9 +25,8 @@ yarn run build'''
     }
     stage('build docker') {
       agent {
-        docker {
-          image 'nginx'
-          args 'COPY ibmcloudbrazil.github.io /usr/share/nginx/html'
+        dockerfile {
+          filename 'Dockerfile'
         }
 
       }
