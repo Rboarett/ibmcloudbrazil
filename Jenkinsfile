@@ -23,5 +23,10 @@ yarn upgrade docusaurus --latest
 yarn run build'''
       }
     }
+    stage('build docker') {
+      steps {
+        sh 'docker build -t ibmcloudbrazil .'
+      }
+    }
   }
 }
