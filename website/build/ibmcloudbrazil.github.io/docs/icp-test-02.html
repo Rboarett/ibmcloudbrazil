@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Instalando ICP 2.1.0.2 · Open Cloud Community</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Instalando ICP 2.1.0.2 · Open Cloud Community"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ibmcloudbrazil.github.io//index.html"/><meta property="og:description" content="&lt;br /&gt;"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ibmcloudbrazil.github.io//blog/atom.xml" title="Open Cloud Community Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ibmcloudbrazil.github.io//blog/feed.xml" title="Open Cloud Community Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/ibm-logo-white.png" alt="Open Cloud Community"/><h2 class="headerTitleWithLogo">Open Cloud Community</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/sobre-01.html" target="_self">Comunidades</a></li><li class=""><a href="/docs/icp-treina-01.html" target="_self">Treinamentos</a></li><li class=""><a href="/en/help.html" target="_self">Ajuda</a></li><li class=""><a href="/blog" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Experimente o ICP</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>IBM Private Cloud</h3><ul><li class="navListItem"><a class="navItem" href="/docs/icp-prod-01.html">Overview</a></li></ul></div><div class="navGroup navGroupActive"><h3>Experimente o ICP</h3><ul><li class="navListItem"><a class="navItem" href="/docs/icp-test-01.html">ICP 2.1.0.2 + Virtual Box</a></li><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/icp-test-02.html">ICP 2.1.0.2 + Ubuntu Server</a></li></ul></div><div class="navGroup navGroupActive"><h3>Hands On</h3><ul><li class="navListItem"><a class="navItem" href="/docs/icp-lab-02.html">Instalando e Configurando</a></li><li class="navListItem"><a class="navItem" href="/docs/icp-lab-03.html">ICP, Containers e Kubernetes</a></li></ul></div><div class="navGroup navGroupActive"><h3>Automações e Scripts</h3><ul><li class="navListItem"><a class="navItem" href="/docs/icp-intern-01.html">Internals</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1>Instalando ICP 2.1.0.2</h1></header><article><div><span><p><br /></p>
+<h2><a class="anchor" aria-hidden="true" id="1-instale-um-ubuntu-server-1604-lts"></a><a href="#1-instale-um-ubuntu-server-1604-lts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1-  Instale um Ubuntu Server 16.04 LTS</h2>
+<ul>
+<li>utilize preferencialmente root</li>
+<li>um servidor com pelo menos 12gb de ram e 4 vcpus</li>
+<li>pode ser virtual, físico ou na cloud ( IBM, Azure, AWS ...)</li>
+<li>preferencialente opte por IPs que não sejam &quot;nateados&quot; para esse teste.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="2-criando-as-chaves"></a><a href="#2-criando-as-chaves" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2- Criando as chaves</h2>
+<ul>
+<li>comece criando a chave no servidor, como root execute</li>
+</ul>
+<pre><code class="hljs">ssh-keygen -<span class="hljs-selector-tag">b</span> <span class="hljs-number">4096</span> -f ~/.ssh/id_rsa -N <span class="hljs-string">""</span> 
+</code></pre>
+<ul>
+<li>copie a chave para o arquivo de autorized_keys</li>
+</ul>
+<pre><code class="hljs">cat ~<span class="hljs-regexp">/.ssh/i</span>d_rsa.pub | sudo tee -a ~<span class="hljs-regexp">/.ssh/</span>authorized_keys
+</code></pre>
+<ul>
+<li>copie a chave para o (os) servidores do cluster</li>
+</ul>
+<pre><code class="hljs">ssh-copy-id -i ~/.ssh/id_rsa.pub<span class="hljs-built_in"> ip
+</span></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="3-instalando-os-pre-reqs"></a><a href="#3-instalando-os-pre-reqs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3- Instalando os pre-reqs</h2>
+<ul>
+<li>configure o mmap e o número de portas local</li>
+</ul>
+<pre><code class="hljs">echo <span class="hljs-string">"vm.max_map_count=262144"</span> <span class="hljs-string">| sudo tee -a /etc/sysctl.conf</span>
+echo 'net.ipv4.ip_local_port_range="<span class="hljs-number">1024</span>0 <span class="hljs-number">6099</span>9"' <span class="hljs-string">| sudo tee -a /etc/sysctl.conf</span>
+</code></pre>
+<ul>
+<li>instale os software mínimos para rodar a instalação</li>
+</ul>
+<pre><code class="hljs">apt-get -y install <span class="hljs-string">\</span>
+    socat <span class="hljs-string">\</span>
+    python <span class="hljs-string">\</span>
+    seapt-transport-https <span class="hljs-string">\</span>
+    ca-certificates <span class="hljs-string">\</span>
+    curl <span class="hljs-string">\</span>
+    software-properties-common<span class="hljs-string">\</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="4-instalando-o-docker-ce"></a><a href="#4-instalando-o-docker-ce" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4- Instalando o docker-ce</h2>
+<ul>
+<li>adcionando a chave do repositório</li>
+</ul>
+<pre><code class="hljs">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key <span class="hljs-keyword">add</span><span class="bash"> -
+</span></code></pre>
+<ul>
+<li>crie o repositório</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-keyword">add</span><span class="bash">-apt-repository \
+   <span class="hljs-string">"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   <span class="hljs-variable">$(lsb_release -cs)</span> \
+   stable"</span>
+</span></code></pre>
+<ul>
+<li>faça o update</li>
+</ul>
+<pre><code class="hljs">apt-<span class="hljs-builtin-name">get</span> update &amp;&amp;  \
+apt-<span class="hljs-builtin-name">get</span> install -y  \
+    <span class="hljs-attribute">docker-ce</span>=17.03.2~ce-0~ubuntu-xenial
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="5-instalando-o-ibm-cloud-private-ce"></a><a href="#5-instalando-o-ibm-cloud-private-ce" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5- Instalando o IBM Cloud Private - CE</h2>
+<ul>
+<li>faça o pull da imagem de instalação através do docker</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-attribute">docker</span> pull ibmcom/icp-inception:<span class="hljs-number">2.1.0.2</span>
+</code></pre>
+<ul>
+<li>crie o diretório</li>
+</ul>
+<pre><code class="hljs">mkdir /opt/ibm-cloud-private-ce<span class="hljs-number">-2.1</span><span class="hljs-number">.0</span><span class="hljs-number">.2</span>;  \
+cd /opt/ibm-cloud-private-ce<span class="hljs-number">-2.1</span><span class="hljs-number">.0</span><span class="hljs-number">.2</span>
+</code></pre>
+<ul>
+<li>crie os arquivos de configuração</li>
+</ul>
+<pre><code class="hljs">docker <span class="hljs-builtin-name">run</span> -e <span class="hljs-attribute">LICENSE</span>=accept \
+-v <span class="hljs-string">"<span class="hljs-variable">$(pwd)</span>"</span>:/data ibmcom/icp-inception:2.1.0.2 cp -r cluster /data
+</code></pre>
+<ul>
+<li>copie a chave para o arquivo de configuração</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-keyword">cp</span> ~/.ssh/id_rsa cluster/ssh_key
+</code></pre>
+<ul>
+<li>edite o arquivo hosts e declare os IPs do servidores</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-selector-tag">vi</span> <span class="hljs-selector-tag">hosts</span>   
+
+<span class="hljs-selector-tag">exemplo</span> <span class="hljs-selector-tag">de</span> <span class="hljs-selector-tag">arquivo</span> <span class="hljs-selector-tag">em</span> <span class="hljs-selector-tag">modo</span> "<span class="hljs-selector-tag">all-in-one</span>"
+<span class="hljs-selector-tag">------</span>
+<span class="hljs-selector-attr">[master]</span>
+172<span class="hljs-selector-class">.31</span><span class="hljs-selector-class">.26</span><span class="hljs-selector-class">.186</span>
+<span class="hljs-selector-attr">[worker]</span>
+172<span class="hljs-selector-class">.31</span><span class="hljs-selector-class">.26</span><span class="hljs-selector-class">.186</span>
+<span class="hljs-selector-attr">[proxy]</span>
+172<span class="hljs-selector-class">.31</span><span class="hljs-selector-class">.26</span><span class="hljs-selector-class">.186</span>
+#<span class="hljs-selector-attr">[management]</span>
+<span class="hljs-selector-id">#4</span><span class="hljs-selector-class">.4</span><span class="hljs-selector-class">.4</span><span class="hljs-selector-class">.4</span>
+#<span class="hljs-selector-attr">[va]</span>
+<span class="hljs-selector-id">#5</span><span class="hljs-selector-class">.5</span><span class="hljs-selector-class">.5</span><span class="hljs-selector-class">.5</span>
+</code></pre>
+<ul>
+<li>edite o arquivo config.yaml e troque a senha de admin</li>
+</ul>
+<pre><code class="hljs">vi config.yaml
+
+<span class="hljs-section">trecho da senha de admin
+------</span>
+## Advanced Settings
+default<span class="hljs-emphasis">_admin_</span>user: admin
+default<span class="hljs-emphasis">_admin_</span>password: admin &lt;&lt; troque essa senha 
+# ansible<span class="hljs-emphasis">_user: &lt;username&gt;
+# ansible_</span>become: true
+# ansible<span class="hljs-emphasis">_become_</span>password: &lt;password&gt;
+</code></pre>
+<ul>
+<li>instale o ICP</li>
+</ul>
+<pre><code class="hljs">docker <span class="hljs-builtin-name">run</span> -e <span class="hljs-attribute">LICENSE</span>=accept <span class="hljs-attribute">--net</span>=host \
+-t -v <span class="hljs-string">"<span class="hljs-variable">$(pwd)</span>"</span>:/installer/cluster \
+ibmcom/icp-inception:2.1.0.2 install
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="icp-test-01.html">← Instalando o ICP com o VirtualBox</a><a class="docs-next button" href="icp-lab-02.html">Installando e Configurando →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#1-instale-um-ubuntu-server-1604-lts">1- Instale um Ubuntu Server 16.04 LTS</a></li><li><a href="#2-criando-as-chaves">2- Criando as chaves</a></li><li><a href="#3-instalando-os-pre-reqs">3- Instalando os pre-reqs</a></li><li><a href="#4-instalando-o-docker-ce">4- Instalando o docker-ce</a></li><li><a href="#5-instalando-o-ibm-cloud-private-ce">5- Instalando o IBM Cloud Private - CE</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/ibm_logo.svg" alt="Open Cloud Community" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="https://slack.com/">Slack Community ( em breve )</a><a href="https://twitter.com/" target="_blank">Twitter ( em breve )</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/facebook/test-site" data-icon="octicon-star" data-count-href="/" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://www.ibm.com/cloud/" target="_blank" class="fbOpenSource"><img src="/img/oss_logo.png" alt="IBM Cloud Brazil" width="170" height="45"/></a><section class="copyright">Copyright © 2018 IBM Inc.</section></footer></div></body></html>

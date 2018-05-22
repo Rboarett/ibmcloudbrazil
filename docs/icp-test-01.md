@@ -1,7 +1,7 @@
 ---
 id: icp-test-01
-title: Testing ICP  
-sidebar_label: Virtual Box
+title: Instalando o ICP com o VirtualBox
+sidebar_label: ICP 2.1.0.2 + Virtual Box
 ---
 <br />
 

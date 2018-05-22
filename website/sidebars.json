@@ -17,8 +17,9 @@
     "IBM Private Cloud":[
       "icp-prod-01"
       ],
-    "Teste o ICP":[
-      "icp-test-01"
+    "Experimente o ICP":[
+      "icp-test-01",
+      "icp-test-02"
       ],
     "Hands On":[
       "icp-lab-02",
