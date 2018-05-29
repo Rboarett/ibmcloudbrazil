@@ -17,12 +17,18 @@ Faça o download da chave do servidor, clicando [aqui](https://raw.githubusercon
 ### 2 - Faça login no servidor
 
 ```
-ssh -i icp-2-1-0-2-v1 root@(_IP_DO_SERVIDOR)
+ssh -i icp-2-1-0-2-v1 root@__IP_DO_SERVIDOR__
 ```
 ### 3 - Editando o arquivo de hosts
 
 ```
 vi /etc/hosts
+
+exemplo de hosts
+-------------
+127.0.0.1	localhost
+__IP_DO_SERVIDOR__  __NOME_DO_HOST___
+
 ```
 ### 4 - Acesse o diretório do ICP 
 
@@ -32,12 +38,25 @@ cd /opt/ibm-cloud-private-ce-2.1.0.2/cluster
 ### 5 - Acesse o arquivo de configuração 
 
 ```
-vi config.yml
+vi config.yaml
 ```
 ### 6 - Edite o arquivo de hosts de instalação
-
+- substitua o IP do seu servidor nos roles master, worker e proxy. 
 ```
-vi hosts 
+vi hosts
+
+exemplo de arquivo em modo "all-in-one"
+------
+[master]
+__IP_DO_SERVIDOR__
+[worker]
+__IP_DO_SERVIDOR__
+[proxy]
+__IP_DO_SERVIDOR__
+#[management]
+#4.4.4.4
+#[va]
+#5.5.5.5
 ```
 ### 7 - Execute a instalação do ICP
 
