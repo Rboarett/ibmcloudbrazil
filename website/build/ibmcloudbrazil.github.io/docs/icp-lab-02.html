@@ -16,19 +16,41 @@
 <pre><code class="hljs">chmod <span class="hljs-number">600</span> icp<span class="hljs-number">-2</span><span class="hljs-number">-1</span><span class="hljs-number">-0</span><span class="hljs-number">-2</span>-v1
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="2-faca-login-no-servidor"></a><a href="#2-faca-login-no-servidor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2 - Faça login no servidor</h3>
-<pre><code class="hljs">ssh -i icp<span class="hljs-number">-2</span><span class="hljs-number">-1</span><span class="hljs-number">-0</span><span class="hljs-number">-2</span>-v1 root@(_IP_DO_SERVIDOR)
+<pre><code class="hljs">ssh -i icp<span class="hljs-number">-2</span><span class="hljs-number">-1</span><span class="hljs-number">-0</span><span class="hljs-number">-2</span>-v1 root@__IP_DO_SERVIDOR__
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="3-editando-o-arquivo-de-hosts"></a><a href="#3-editando-o-arquivo-de-hosts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3 - Editando o arquivo de hosts</h3>
-<pre><code class="hljs">vi <span class="hljs-regexp">/etc/</span>hosts
+<pre><code class="hljs">vi /etc/hosts
+
+<span class="hljs-section">exemplo de hosts
+-------------</span>
+127.0.0.1   localhost
+_<span class="hljs-emphasis">_IP_</span>DO<span class="hljs-emphasis">_SERVIDOR_</span>_  _<span class="hljs-emphasis">_NOME_</span>DO<span class="hljs-emphasis">_HOST_</span>__
+
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="4-acesse-o-diretorio-do-icp"></a><a href="#4-acesse-o-diretorio-do-icp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4 - Acesse o diretório do ICP</h3>
 <pre><code class="hljs">cd /opt/ibm-cloud-private-ce<span class="hljs-number">-2.1</span><span class="hljs-number">.0</span><span class="hljs-number">.2</span>/cluster
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="5-acesse-o-arquivo-de-configuracão"></a><a href="#5-acesse-o-arquivo-de-configuracão" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5 - Acesse o arquivo de configuração</h3>
-<pre><code class="hljs">vi config<span class="hljs-selector-class">.yml</span>
+<pre><code class="hljs">vi config<span class="hljs-selector-class">.yaml</span>
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="6-edite-o-arquivo-de-hosts-de-instalacão"></a><a href="#6-edite-o-arquivo-de-hosts-de-instalacão" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6 - Edite o arquivo de hosts de instalação</h3>
-<pre><code class="hljs"><span class="hljs-attribute">vi hosts</span> 
+<ul>
+<li>substitua o IP do seu servidor nos roles master, worker e proxy.</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-selector-tag">vi</span> <span class="hljs-selector-tag">hosts</span>
+
+<span class="hljs-selector-tag">exemplo</span> <span class="hljs-selector-tag">de</span> <span class="hljs-selector-tag">arquivo</span> <span class="hljs-selector-tag">em</span> <span class="hljs-selector-tag">modo</span> "<span class="hljs-selector-tag">all-in-one</span>"
+<span class="hljs-selector-tag">------</span>
+<span class="hljs-selector-attr">[master]</span>
+__<span class="hljs-selector-tag">IP_DO_SERVIDOR__</span>
+<span class="hljs-selector-attr">[worker]</span>
+__<span class="hljs-selector-tag">IP_DO_SERVIDOR__</span>
+<span class="hljs-selector-attr">[proxy]</span>
+__<span class="hljs-selector-tag">IP_DO_SERVIDOR__</span>
+#<span class="hljs-selector-attr">[management]</span>
+<span class="hljs-selector-id">#4</span><span class="hljs-selector-class">.4</span><span class="hljs-selector-class">.4</span><span class="hljs-selector-class">.4</span>
+#<span class="hljs-selector-attr">[va]</span>
+<span class="hljs-selector-id">#5</span><span class="hljs-selector-class">.5</span><span class="hljs-selector-class">.5</span><span class="hljs-selector-class">.5</span>
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="7-execute-a-instalacão-do-icp"></a><a href="#7-execute-a-instalacão-do-icp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>7 - Execute a instalação do ICP</h3>
 <pre><code class="hljs">docker <span class="hljs-builtin-name">run</span> -e <span class="hljs-attribute">LICENSE</span>=accept <span class="hljs-attribute">--net</span>=host \

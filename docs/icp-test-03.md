@@ -26,7 +26,7 @@ cat ~/.ssh/id_rsa.pub | sudo tee -a ~/.ssh/authorized_keys
 ````
 - copie a chave para o (os) servidores do cluster 
 ````
-ssh-copy-id -i ~/.ssh/id_rsa.pub ip
+ssh-copy-id -i ~/.ssh/id_rsa.pub __IP_DO_SERVIDOR__
 ````
 
 
@@ -34,8 +34,8 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub ip
 
 - configure o mmap e o número de portas local
 ```
-echo "vm.max_map_count=262144" | sudo tee -a /etc/sysctl.conf
-echo 'net.ipv4.ip_local_port_range="10240 60999"' | sudo tee -a /etc/sysctl.conf
+echo "vm.max_map_count=262144" | tee -a /etc/sysctl.conf
+echo 'net.ipv4.ip_local_port_range="10240 60999"' | tee -a /etc/sysctl.conf
 ```
 
 - instale os software mínimos para rodar a instalação 
@@ -43,10 +43,10 @@ echo 'net.ipv4.ip_local_port_range="10240 60999"' | sudo tee -a /etc/sysctl.conf
 apt-get -y install \
     socat \
     python \
-    seapt-transport-https \
+    apt-transport-https \
     ca-certificates \
     curl \
-    software-properties-common\
+    software-properties-common
 ```
 
 

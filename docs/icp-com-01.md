@@ -1,7 +1,7 @@
 ---
 id: icp-com-01
 title: IBM Cloud Private 
-sidebar_label: IBM Private Cloud 
+sidebar_label: IBM Cloud Private 
 ---
 <br />
 
