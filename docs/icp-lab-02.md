@@ -1,6 +1,6 @@
 ---
 id: icp-lab-02
-title: "Installando e Configurando"
+title: "Instalando e Configurando"
 sidebar_label: Instalando e Configurando
 ---
 <br />
@@ -12,6 +12,12 @@ sidebar_label: Instalando e Configurando
 ### 1 - Download da chave
 
 Faça o download da chave do servidor, clicando [aqui](https://raw.githubusercontent.com/IBMCloudBrazil/ibmcloudbrazil/master/docs/icp-2-1-0-2-v1)
+
+- ajuste o permissionamento do certifiado
+
+```
+chmod 600 icp-2-1-0-2-v1
+```
 
 
 ### 2 - Faça login no servidor

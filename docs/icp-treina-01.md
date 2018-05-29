@@ -15,10 +15,9 @@ A idéia é não ter uma agenda fixa e sim discutir as aplicações e as possív
 
 |Data|Sessão|Tipo|Público|Local|Vagas|Inscrição|
 |---|---|---|---|---|---|---|
-|25/05/2018| #2 - Venda IBM Private Cloud ! | Knowledge sharing | IBMers e Partners | WebMeeting | 50 | [Link](https://docs.google.com/forms/d/e/1FAIpQLSed7Ue-5D_QeQTLfRulRgNgYcXrc9rep1LeFrzBKzKrxpLoSg/viewform)|
 |01/06/2018| #3 - Venda IBM Private Cloud ! | Knowledge sharing | IBMers e Partners | WebMeeting | 50 | [Link](https://docs.google.com/forms/d/e/1FAIpQLScDL3WsCHCG_3EnUzCJvtbqnreoCNjzHTh4TvnQz2hmP8OUqw/viewform)|
 |08/06/2018| #4 - Venda IBM Private Cloud ! | Knowledge sharing | IBMers e Partners | WebMeeting | 50 | [Link](https://docs.google.com/forms/d/e/1FAIpQLSccoy-9mOejm1S9wtxQHCLoDulScvbaecvS5ZydbY7TSqT0aQ/viewform)|
 |15/06/2018| #5 - Venda IBM Private Cloud ! | Knowledge sharing | IBMers e Partners | WebMeeting | 50 | [Link](https://docs.google.com/forms/d/e/1FAIpQLScsoWXsEvPe6b7modrS_oCqrRTTvAjTzq0pCA7EcGZq7jhaPw/viewform)|
-
+|22/06/2018| #6 - Venda IBM Private Cloud ! | Knowledge sharing | IBMers e Partners | WebMeeting | 50 | [Link](https://docs.google.com/forms/d/e/1FAIpQLSdLQCL3FrxP5wfj1icXr1FAq1S36aV5yT2DDeZ7Qr_gKVD_Rw/viewform)|
 
 <br />
