@@ -2,12 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ibmcloudbrazil.github.io//blog</id>
     <title>Open Cloud Community Blog</title>
-    <updated>2018-03-19T06:00:00Z</updated>
+    <updated>2018-06-01T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://ibmcloudbrazil.github.io//blog"/>
     <subtitle>The best place to stay up-to-date with the latest Open Cloud Community news and events.</subtitle>
     <logo>https://ibmcloudbrazil.github.io//img/ibm-logo-white.png</logo>
     <rights>Copyright © 2018Open Cloud Community</rights>
+    <entry>
+        <title type="html"><![CDATA[Istio Multi Cluster]]></title>
+        <id>https://ibmcloudbrazil.github.io//blog/2018/06/01/istio-multi-clou.html</id>
+        <link href="https://ibmcloudbrazil.github.io//blog/2018/06/01/istio-multi-clou.html">
+        </link>
+        <updated>2018-06-01T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>Com o lançamento do IBM Cloud Private, versão 2.1.0.3, algumas novidades estão sendo apresentadas. Uma das capacidades chave para implementar uma estratégia de cloud híbrida é a capacidade de gerenciar múltiplos clusters de kubernets.
+Nesse link está</p>
+]]></summary>
+        <author>
+            <name>Felipe Felipe</name>
+            <uri>http://twitter.com/pfelipebr</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[IBM Cloud Private - Versão nova !!]]></title>
         <id>https://ibmcloudbrazil.github.io//blog/2018/03/19/new-version-icp.html</id>

@@ -54,11 +54,13 @@ const siteConfig = {
     new Date().getFullYear() +
     'Open Cloud Community',
   organizationName: 'ibmcloudbrazil', // or set an env variable ORGANIZATION_NAME
-  projectName: 'ibmcloudbrazil.github.io', // or set an env variable PROJECT_NAME
+  projectName: 'ibmcloudbrazil.github.io', // or set an env variable PROJECT_NAME,
+  gaTrackingId: 'UA-116360064-1',
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
     theme: 'default',
   },
+  //gaTrackingId: 'UA-116360064-1'
   scripts: ['https://buttons.github.io/buttons.js'],
   // You may provide arbitrary config keys to be used as needed by your template.
   repoUrl: 'https://github.com/facebook/test-site',
