@@ -1,11 +1,9 @@
 ---
 id: icp-intern-02
 title: "Pré-requisitos ICP 2.1.0.2 EE "
-sidebar_label: Pré-req ICP 2.1.0.2
+sidebar_label: Pré-Req ICP 2.1.0.2 EE
 ---
-
-# ICP-EE em Ubuntu
-
+<br />
 ## Ubuntu 16.04 LTS
 
 - versão 16.04 LTS x64  
