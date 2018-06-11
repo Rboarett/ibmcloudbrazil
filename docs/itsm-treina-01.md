@@ -1,7 +1,7 @@
 ---
 id: itsm-treina-01
 title: Webcasts, treinamentos e workshops
-sidebar_label: ITSM
+sidebar_label: Hybrid Cloud Management
 ---
 <br />
 
@@ -18,7 +18,7 @@ sidebar_label: ITSM
 --------------------------------------------
 <br />
 ### Prepare for 31 Dec 2018: END-OF-SUPPORT Network Management Versions
-This session will get you prepared for the End of Support deadline of the Tivoli Network Manager (ITNM)   product versions (v3.8 – v4.1.1) and Netcool Configuration Manager (NCM) product versions (v6.3.x – v6.4.1).*
+This session will get you prepared for the End of Support deadline of the Tivoli Network Manager (ITNM)   product versions (v3.8 – v4.1.1) and Netcool Configuration Manager (NCM) product versions (v6.3.x – v6.4.1).
 
 We aim to cover these areas:
 - Benefits Network Manager v4.2.5 & Netcool Configuration Manager v6.4.6
@@ -31,7 +31,7 @@ We aim to cover these areas:
 
 <br />
 
-### Do I Need IBM Network Performance Insight (NPI) for Network Performance Management?*
+### Do I Need IBM Network Performance Insight (NPI) for Network Performance Management?
 By the end of the session, you will be able to answer in the affirmative. Within the hour session, we aim to cover:
 - Introduction to NPI
 - NPI Value proposition & Prospect profile
@@ -44,7 +44,7 @@ By the end of the session, you will be able to answer in the affirmative. Within
 
 <br />
 
-### ITNM High-Availability using DB2 HADR and System Automation for Multi-platforms (SAMP)*
+### ITNM High-Availability using DB2 HADR and System Automation for Multi-platforms (SAMP)
 Learn how to use System Automation to create automated DB2 HADR failover for your ITNM Environment.
 
 [... voltar webcast](/docs/itsm-treina-01.html#webcasts)
