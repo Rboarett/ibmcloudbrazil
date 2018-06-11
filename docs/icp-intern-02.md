@@ -4,9 +4,25 @@ title: "Pré-requisitos ICP 2.1.0.2 EE "
 sidebar_label: Pré-Req ICP 2.1.0.2 EE
 ---
 <br />
+
 ## Ubuntu 16.04 LTS
 
-- versão 16.04 LTS x64  
+### Software
+-------------------------------------------------------
+
+    #### Ubuntu
+    - versão 16.04 LTS x64
+    - [download link aqui](http://mirror.ufscar.br/ubuntu-releases/xenial/ubuntu-16.04.4-server-amd64.iso)
+
+
+#### Docker-CE
+
+- utilize a versão do Docker-ce que vem junto com o empacotamento do IBM
+````
+icp-docker-17.09_x86_64.bin
+````
+
+
 
 #### Mínimo de servidores e especificações 
 
@@ -14,11 +30,11 @@ sidebar_label: Pré-Req ICP 2.1.0.2 EE
 
 |Role| # Servidores | # Cores | # RAM | # Disco |
 |---|---|---|---|---|
-|boot-node| 1 server | 2 vCpus | 4 GB | 100 GB |
+|boot-node| 1 server | 8 vCpus | 8 GB | 100 GB |
 |master| 3 servers | 8 vCpus | 16 GB | 200 GB |
 |worker| 3 servers | 4 vCpus | 16 GB | 100 GB |
-|proxy| 1 servers | 2 vCpus | 4 GB | 50 GB  |
-|management| 1 servers | 2 vCpus | 8 GB | 200 |
+|proxy| 1 servers | 4 vCpus | 4 GB | 50 GB  |
+|management| 1 servers | 8 vCpus | 8 GB | 200 |
 
 #### Storage compartilhado entre os servidores
 
@@ -32,3 +48,4 @@ sidebar_label: Pré-Req ICP 2.1.0.2 EE
 ```
 /var/lib/icp/audit
 ```
+	
