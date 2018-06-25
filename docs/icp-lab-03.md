@@ -20,7 +20,7 @@ sidebar_label: "ICP, Containers e Kubernetes"
 
   user: admin     
 
-  pass: kjdhdjhehuh2uy37637627ui2jk2jskhs
+  pass: IBMPrivateCloud2018
 
 <br />
 ### 2 - Faça login no terminal 
@@ -180,3 +180,4 @@ spec:
 - você deve receber uma tela como essa:
 ![](https://c1.staticflickr.com/1/956/42173417831_ac9a27b02d_o.png)
 
+![](http://drive.google.com/uc?export=view&id=19s6ND7xLLPMER5CdYgyhtwWqRqfTkMNW)

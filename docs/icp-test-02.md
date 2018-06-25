@@ -46,6 +46,7 @@ apt-get -y install \
     ca-certificates \
     curl \
     software-properties-common\
+    nfs-common
 ```
 
 
